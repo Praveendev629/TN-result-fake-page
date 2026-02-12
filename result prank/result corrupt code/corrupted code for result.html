@@ -1,0 +1,43 @@
+<div id="register" style="height: 310px; width: 100%; background-color: rgb(249, 249, 249);">
+  <center>
+    <div id="mark" style="background-color: rgb(249, 249, 249); width: 400px; height: 250px; border-style: solid; border-color: brown; border-width: 1px; position: relative; top: 50px;">
+      
+      <!-- Registration No -->
+      <table>
+        <tr style="position: relative; top: 10px; left: 30px;">
+          <td style="color: brown; padding-left: 20px;"><b>Registration No:</b></td>
+          <td>
+            <input id="regno" type="text" maxlength="7"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            style="height: 30px; border-radius: 5px; border: 2px solid rgb(224, 224, 224); width: 125px; font-size: 15px; margin-left: 10px; padding-left: 8px; background-color: white; outline: none;">
+          </td>
+        </tr>
+      </table>
+
+      <!-- Date of Birth -->
+      <table style="position: relative; top: 30px; left: 2px;">
+        <tr>
+          <td style="color: brown;"><b>Date of Birth (dd/mm/yyyy):</b></td>
+          <td>
+            <input id="dob" maxlength="10"
+            style="height: 30px; border-radius: 5px; border: 2px solid rgb(224, 224, 224); width: 125px; font-size: 15px; margin-left: 10px; padding-left: 8px; background-color: white; outline: none;">
+          </td>
+        </tr>
+      </table>
+
+      <!-- Buttons -->
+      <br><br><br><br>
+
+      <!-- Get Marks button -->
+      <button onclick="validateAndRedirect()" style="padding-left: 50px; padding-right: 50px; padding-top: 15px; padding-bottom: 15px; position: relative; right: 15px; border-radius: 5px; border-style: none; background-color: rgb(225, 225, 225);">
+        <b>Get Marks</b>
+      </button>
+
+      <!-- Clear button -->
+      <button style="padding-left: 40px; padding-right: 40px; padding-top: 15px; padding-bottom: 15px; position: relative; left: 15px; border-radius: 5px; border-style: none; background-color: rgb(225, 225, 225);">
+        <b><a href="/" style="text-decoration: none; color: black;">Clear</a></b>
+      </button>
+
+    </div>
+  </center>
+</div>

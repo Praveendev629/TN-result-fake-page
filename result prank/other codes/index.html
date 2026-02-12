@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TN HSE(+2) Result 2025</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function validateAndRedirect() {
+      const regNo = document.getElementById("regno").value.trim();
+      const dob = document.getElementById("dob").value.trim();
+  
+      if (regNo === "9541897" && dob === "25/10/2007") {
+        window.location.href = "/12th marks.html";
+      } else if (regNo === "9541893" && dob === "08/12/2007") {
+        window.location.href = "/nithesh mark.html";
+      } else {
+        alert("Invalid Registration Number or Date of Birth.");
+      }
+    }
+  </script>
+  
+</head>
+<body>
+  <header>
+    <div class="container" style="height: 41.5px; font-family: Arial, Helvetica, sans-serif;">
+      <p><b>Government of Tamil Nadu</b></p>
+      <p><b>Directorate of Government Examinations</b></p>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="left">
+      <img src="icon07.gif" alt="Icon">
+    </div>
+    <div class="center">Examination Results</div>
+    <div class="right"></div>
+  </div>
+  
+  <div id="register">
+    <center>
+      <div id="mark">
+        <table>
+          <tr style="position: relative; top: 10px; left: 30px;">
+            <td style="color: brown; padding-left: 20px;"><b>Registration No:</b></td>
+            <td>
+              <input id="regno" type="text" maxlength="7"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              style="height: 30px; border-radius: 5px; border-color: rgb(224, 224, 224); width: 125px; font-size: 15px; margin-left: 10px; padding-left: 8px;">
+             </td>
+          </tr>
+        </table>
+        <table style="position: relative; top: 30px; left: 2px;">
+          <tr>
+            <td style="color: brown;"><b>Date of Birth (dd/mm/yyyy):</b></td>
+            <td>
+              <input id="dob" maxlength="10" style="height: 30px; border-radius: 5px; border-color: rgb(224, 224, 224); width: 125px; font-size: 15px; margin-left: 10px; padding-left: 8px;">
+            </td>
+          </tr>
+        </table>
+
+        <br><br><br><br>
+
+        <!-- Get Marks button -->
+        <button onclick="validateAndRedirect()" style="padding-left: 50px; padding-right: 50px; padding-top: 15px; padding-bottom: 15px; position: relative; right: 15px; border-radius: 5px; border-style: none; background-color: rgb(225, 225, 225);">
+          <b>Get Marks</b>
+        </button>
+
+        <!-- Clear button -->
+        <button style="padding-left: 40px; padding-right: 40px; padding-top: 15px; padding-bottom: 15px; position: relative; left: 15px; border-radius: 5px; border-style: none; background-color: rgb(225, 225, 225);">
+          <b><a href="/" style="text-decoration: none; color: black;">Clear</a></b>
+        </button>
+      </div>
+    </center>
+  </div>
+
+  <center>
+    <footer>
+      <p>
+        <b><a href="#" style="color: rgb(64,151,211); font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Site Designed and hosted by National Informatics Centre</a></b><br>
+        <strong style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">For results related queries Contact DGE: directordge [dot] tn [at] nic [dot] in</strong> 
+      </p>
+      <br><br>
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> Neither NIC nor the Directorate is responsible for any inadvertent error that 
+        <p class="disclaimer">may have crept in the results being published on Net. The results published on Net are for</p>
+        <p class="disclaimer">immediate information to the examinees. These cannot be treated as original mark sheets.</p>
+      </p>
+    </footer>
+  </center>
+</body>
+</html>
